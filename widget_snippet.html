@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript third party widget example</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+        
+            var _wep =  _wep || [];
+             _wep.push(['_param1', '1']);
+             _wep.push(['_param2','12']);
+
+            (function() {
+                var we = document.createElement('script'); we.type = 'text/javascript'; we.async = true;
+                we.src = 'js/widget.js';//http://www.astrafit.com/
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(we, s);
+            })();
+
+        </script>
+    </body>
+</html>
